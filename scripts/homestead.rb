@@ -213,6 +213,11 @@ class Homestead
         end
 
         config.vm.provision "shell" do |s|
+            s.name = "Installing Microsoft PHP Drivers for SQL Server"
+            s.path = scriptDir + "/install-mssql.sh"
+        end
+
+        config.vm.provision "shell" do |s|
             s.name = "Restarting Nginx"
             s.inline = "sudo service nginx restart; sudo service php7.1-fpm restart"
         end
