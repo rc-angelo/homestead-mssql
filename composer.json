@@ -2,7 +2,7 @@
     "name": "f3rland/homestead-mssql",
     "description": "A virtual machine for web artisans that include drivers for SQL Server.",
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": "5.5.9",
         "symfony/console": "~2.3|~3.0",
         "symfony/process": "~2.3|~3.0",
         "symfony/yaml": "~2.3|~3.0"
